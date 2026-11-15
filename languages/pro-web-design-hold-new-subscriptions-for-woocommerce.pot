@@ -2,7 +2,7 @@
 # This file is distributed under the GPL-2.0-or-later license.
 msgid ""
 msgstr ""
-"Project-Id-Version: Pro Web Design Hold New Subscriptions for WooCommerce 1.4.6\n"
+"Project-Id-Version: Pro Web Design Hold New Subscriptions for WooCommerce 1.5.0\n"
 "Report-Msgid-Bugs-To: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -62,46 +62,6 @@ msgstr ""
 #: emails/hnsub-subscription-hold.php
 #: emails/plain/hnsub-subscription-hold.php
 msgid "You will receive an additional confirmation once your subscription is activated."
-msgstr ""
-
-#: hold-new-subscriptions.php
-msgid "Hold New Subscriptions"
-msgstr ""
-
-#: hold-new-subscriptions.php
-msgid "WooCommerce must be active."
-msgstr ""
-
-#: hold-new-subscriptions.php
-msgid "WooCommerce Subscriptions plugin is required."
-msgstr ""
-
-#. translators: %s: reason the subscription was activated
-#: hold-new-subscriptions.php
-msgid "HNS: subscription activated. %s"
-msgstr ""
-
-#: hold-new-subscriptions.php
-msgid "Held again by Hold New Subscriptions: payment confirmed, order not yet at an activation status."
-msgstr ""
-
-#. translators: 1: subscription status, 2: comma-separated order statuses that will trigger activation
-#: hold-new-subscriptions.php
-msgid "HNS: payment confirmed; subscription kept %1$s until parent order reaches: %2$s"
-msgstr ""
-
-#: hold-new-subscriptions.php
-msgid "Automatically set by Hold New Subscriptions."
-msgstr ""
-
-#. translators: 1: initial subscription status, 2: comma-separated order statuses that will trigger activation
-#: hold-new-subscriptions.php
-msgid "HNS: subscription set to %1$s until parent order reaches: %2$s"
-msgstr ""
-
-#. translators: %s: order status that triggered activation
-#: hold-new-subscriptions.php
-msgid "Activated when parent order reached target status \"%s\"."
 msgstr ""
 
 #: includes/class-hnsub-admin.php
@@ -278,4 +238,44 @@ msgstr ""
 
 #: includes/class-hnsub-email-hold.php
 msgid "Your subscription #{subscription_id} is on hold"
+msgstr ""
+
+#: includes/hnsub-core.php
+msgid "Hold New Subscriptions"
+msgstr ""
+
+#: includes/hnsub-core.php
+msgid "WooCommerce must be active."
+msgstr ""
+
+#: includes/hnsub-core.php
+msgid "WooCommerce Subscriptions plugin is required."
+msgstr ""
+
+#. translators: %s: reason the subscription was activated
+#: includes/hnsub-core.php
+msgid "HNS: subscription activated. %s"
+msgstr ""
+
+#: includes/hnsub-core.php
+msgid "Held again by Hold New Subscriptions: payment confirmed, order not yet at an activation status."
+msgstr ""
+
+#. translators: 1: subscription status, 2: comma-separated order statuses that will trigger activation
+#: includes/hnsub-core.php
+msgid "HNS: payment confirmed; subscription kept %1$s until parent order reaches: %2$s"
+msgstr ""
+
+#: includes/hnsub-core.php
+msgid "Automatically set by Hold New Subscriptions."
+msgstr ""
+
+#. translators: 1: initial subscription status, 2: comma-separated order statuses that will trigger activation
+#: includes/hnsub-core.php
+msgid "HNS: subscription set to %1$s until parent order reaches: %2$s"
+msgstr ""
+
+#. translators: %s: order status that triggered activation
+#: includes/hnsub-core.php
+msgid "Activated when parent order reached target status \"%s\"."
 msgstr ""

@@ -1,11 +1,11 @@
 === Pro Web Design Hold New Subscriptions for WooCommerce ===
-Contributors: prowebdeignuk
+Contributors: prowebdeignuk, freemius
 Tags: woocommerce, subscriptions, order status, hpos, workflow
 Requires at least: 5.8
 Tested up to: 7.1
 Requires PHP: 7.2
 Requires Plugins: woocommerce
-Stable tag: 1.4.6
+Stable tag: 1.5.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,6 +29,17 @@ This plugin is an add-on for **WooCommerce Subscriptions**, a separate paid exte
 * Optional customer emails — one when a subscription is placed on hold, one when it's activated
 * Full **HPOS** (High-Performance Order Storage) compatibility
 * Translation-ready: all texts can be translated at translate.wordpress.org
+
+= Professional version =
+
+Everything above is free. A separate Professional version adds:
+
+* **Send info and activate** — send the customer a note from a saved template and activate the subscription in one click, from the order or the subscription screen
+* **Per-product rules** — a different hold status and different activation statuses for individual subscription products
+* **Escalation timer** — get notified, or have the subscription activated or cancelled automatically, when it stays on hold longer than the time you set
+* **Notifications** — a webhook to Slack, Discord, Mattermost or any URL when a subscription is held, activated or escalated
+
+The Professional version is sold from the plugin's Pricing page in your WordPress admin and comes with a 14-day trial. None of its code is included in this free plugin.
 
 = Who Is This For? =
 
@@ -73,11 +84,21 @@ Yes. Enable "Limit by payment gateways" in the settings and choose which gateway
 
 The subscription activates as soon as the parent order reaches any one of the statuses you selected.
 
+= Does the plugin send any data anywhere? =
+
+Not unless you agree. The plugin includes the Freemius SDK, which is used to sell and update the Professional version. After activation it asks whether you want to share basic, non-sensitive diagnostic data (WordPress and PHP versions, the plugin version, your site address and admin email). You can skip that question and the plugin works exactly the same; nothing is sent if you skip. Freemius privacy policy: https://freemius.com/privacy/
+
 == Screenshots ==
 
 1. Settings page under WooCommerce → Hold Subscriptions
 
 == Changelog ==
+
+= 1.5.0 =
+* Added: a Professional version is now available (send info and activate, per-product rules, escalation timer, notifications). It is a separate download; this free plugin works as before.
+* Added: the Freemius SDK, used for the Professional version's licensing and updates. It asks once, after activation, whether you want to share basic diagnostic data — optional, and nothing is sent if you skip.
+* Changed: the plugin's data is now removed on uninstall only when no other edition of the plugin (free or Professional) is still installed, so switching editions does not lose your settings.
+* No changes to how subscriptions are held or activated.
 
 = 1.4.6 =
 * Removed the bundled translation files and the built-in Russian fallback. Translations are now handled by translate.wordpress.org, as for every plugin in the directory. No functional changes.
@@ -132,6 +153,9 @@ The subscription activates as soon as the parent order reaches any one of the st
 * Added Russian and English translations with a `gettext`-based Russian fallback for installs missing the compiled `.mo` file.
 
 == Upgrade Notice ==
+
+= 1.5.0 =
+Adds the option to upgrade to the Professional version. The free plugin works exactly as before.
 
 = 1.4.6 =
 The Russian translation is no longer bundled with the plugin; translations now come from translate.wordpress.org. No functional changes.

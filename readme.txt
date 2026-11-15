@@ -41,6 +41,8 @@ Everything above is free. A separate Professional version adds:
 
 The Professional version is sold from the plugin's Pricing page in your WordPress admin and comes with a 14-day trial. None of its code is included in this free plugin.
 
+Screenshots, a feature comparison and prices: [Hold New Subscriptions on pro-webdesign.co.uk](https://www.pro-webdesign.co.uk/plugins/hold-new-subscriptions).
+
 = Who Is This For? =
 
 Stores that sell WooCommerce Subscriptions but need a manual review, verification, or fulfilment step before granting access — so subscribers don't see "Active" prematurely and don't reach out to support asking why they can't use something the system already marked as active.

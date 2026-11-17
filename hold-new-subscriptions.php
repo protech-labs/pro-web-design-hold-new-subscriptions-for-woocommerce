@@ -2,17 +2,18 @@
 
 /**
  * Plugin Name: Pro Web Design Hold New Subscriptions for WooCommerce
- * Plugin URI: https://wordpress.org/plugins/pro-web-design-hold-new-subscriptions-for-woocommerce/
+ * Plugin URI: https://www.pro-webdesign.co.uk/plugins/hold-new-subscriptions
  * Description: Puts newly created WooCommerce Subscriptions on hold (configurable) until the parent order reaches selected statuses (e.g. Completed), then activates them.
  * Author: Pro Technologies Limited
  * Author URI: https://www.pro-webdesign.co.uk
- * Version: 1.5.0
+ * Version: 1.5.1
  * License: GPL-2.0-or-later
  * Text Domain: pro-web-design-hold-new-subscriptions-for-woocommerce
  * Domain Path: /languages
  * Requires at least: 5.8
  * Requires PHP: 7.2
  * Requires Plugins: woocommerce
+ * WC tested up to: 11.3
  *
  *
  * @package Hold_New_Subscriptions
@@ -69,7 +70,7 @@ if ( function_exists( 'hnsub_fs' ) ) {
         hnsub_fs();
         do_action( 'hnsub_fs_loaded' );
     }
-    define( 'HNSUB_PLUGIN_VERSION', '1.5.0' );
+    define( 'HNSUB_PLUGIN_VERSION', '1.5.1' );
     define( 'HNSUB_PLUGIN_FILE', __FILE__ );
     define( 'HNSUB_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
     define( 'HNSUB_PLUGIN_URL', plugin_dir_url( __FILE__ ) );

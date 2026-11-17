@@ -100,6 +100,10 @@ class HNSUB_Admin {
         ?>
         <div class="wrap">
             <h1><?php esc_html_e( 'Hold Subscriptions', 'pro-web-design-hold-new-subscriptions-for-woocommerce' ); ?></h1>
+            <?php
+            // WordPress prints "Settings saved." by itself only on pages under Settings; here we ask for it.
+            settings_errors();
+            ?>
             <form method="post" action="options.php">
                 <?php settings_fields( 'hnsub_settings_group' ); ?>
                 <?php do_settings_sections( 'hnsub_settings' ); ?>

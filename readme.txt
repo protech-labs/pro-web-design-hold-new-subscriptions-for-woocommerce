@@ -5,7 +5,7 @@ Requires at least: 5.8
 Tested up to: 7.1
 Requires PHP: 7.2
 Requires Plugins: woocommerce
-Stable tag: 1.5.0
+Stable tag: 1.5.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -96,6 +96,11 @@ Not unless you agree. The plugin includes the Freemius SDK, which is used to sel
 
 == Changelog ==
 
+= 1.5.1 =
+* Added: a "Settings saved." message after saving the settings.
+* Confirmed compatibility with WooCommerce 11.3 (tested on WooCommerce 11.3.0, WooCommerce Subscriptions 9.4.1 and WordPress 7.1.4).
+* Changed: the plugin's homepage link now points to the plugin page on pro-webdesign.co.uk.
+
 = 1.5.0 =
 * Added: a Professional version is now available (send info and activate, per-product rules, escalation timer, notifications). It is a separate download; this free plugin works as before.
 * Added: the Freemius SDK, used for the Professional version's licensing and updates. It asks once, after activation, whether you want to share basic diagnostic data — optional, and nothing is sent if you skip.
@@ -155,6 +160,9 @@ Not unless you agree. The plugin includes the Freemius SDK, which is used to sel
 * Added Russian and English translations with a `gettext`-based Russian fallback for installs missing the compiled `.mo` file.
 
 == Upgrade Notice ==
+
+= 1.5.1 =
+Confirms compatibility with WooCommerce 11.3 and shows a confirmation after saving the settings.
 
 = 1.5.0 =
 Adds the option to upgrade to the Professional version. The free plugin works exactly as before.
